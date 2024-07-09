@@ -1,9 +1,8 @@
 FROM ubuntu:latest
 
-LABEL maintainer="Victor Borja <vborja@apache.org>"
-LABEL updated_at=2017-08-23
-
 RUN apt-get update -q && apt-get install -y git curl
+
+WORKDIR /Work
 
 USER root
 ENV HOME="/root"
